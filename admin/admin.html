@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gpt Gulbarga</title>
-    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/admin.css">
 </head>
 <body>
     <div id="header">
@@ -25,7 +25,35 @@
         </div>
     </div>
     <div id="actions">
-        
+        <div class="flex" style="margin:0px;">
+            <div id="act-btns">
+                <button onclick="show('upload',['view','delete'])">Upload</button><br>
+                <button onclick="show('view',['upload','delete'])">View</button>  <br> 
+                <button onclick="show('delete',['view','upload'])">Delete</button><br>
+            </div>
+            <div id="upload">
+                <button onclick="show_action('upload','student')">Student</button><br>
+                <button onclick="show_action('upload','faculty')">Faculty</button>
+            </div>
+            <div id="view">
+                <button>Cs Students</button><br>
+                <button>Is Students</button><br>
+                <button>Me Students</button><br>
+                <button>Civil Students</button><br>
+                <button>EE Students</button><br>
+                <button>Ec Students</button><br>
+            </div>
+            <div id="delete">
+                <button>Delete </button><br>
+                <button>Is Students</button><br>
+                <button>Me Students</button><br>
+                <button>Civil Students</button><br>
+                <button>EE Students</button><br>
+                <button>Ec Students</button><br>
+            </div>
+           <iframe src="upload.html" frameborder="0" id="action"></iframe>
+        </div>
     </div>
+    <script src="../static/js/admin.js"></script>
 </body>
 </html>
