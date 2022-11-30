@@ -1,4 +1,3 @@
-opt_list = ["upload","view","delete"];
 function show(elem,hide){
     let opt = document.getElementById(elem);
     opt.style="display:block";
@@ -10,5 +9,6 @@ function show(elem,hide){
 function show_action(act,type){
     let elem = document.getElementById("action");
     elem.style='display:block';
-    elem.src=act+type+'.html';
+    elem.src=act+'.html';
+    sessionStorage.setItem("upload_type",type)
 }
