@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gpt Gulbarga</title>
     <link rel="stylesheet" href="static/css/index.css">
     <link rel="stylesheet" href="static/css/carousel.css">
     <style>
         #links{
             width: max-content;
+            max-width:100%;
             margin: auto;
         }
         #links button{
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 30px;
-    background-color:rgba(147, 197, 238, 0.959);
-    font-size: large;
-    border: none;
-    min-width: 80px;
-    height: 30px;
-}
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 30px;
+            background-color:rgba(147, 197, 238, 0.959);
+            font-size: large;
+            border: none;
+            min-width: 80px;
+            height: 30px;}
     </style>
 </head>
 <body>
@@ -32,7 +32,7 @@
         </div>
     </div>
     <!--❮❯--->
-    <div id="nav">
+    <div id="desk-nav">
         <div class="flex">
             <button onclick="location.href='index.html'">Home</button>
             <button onclick="location.href='courses.html'">Courses</button>
@@ -42,10 +42,21 @@
             <button onclick="location.href='about.html'">About Us</button>
         </div>
     </div>
-    <div id="carousel">
-        <div id="act-buttons">
-            <span id="prev-btn" onclick="carousel(-1,'carousel_image')">❮</span> <span id="next-btn" onclick="carousel(1,'carousel_image')">❯</span>
+    <div id="menu" onclick="change(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
         </div>
+    <div id="mob-nav" class="hide">
+            <button onclick="location.href='index.html'">Home</button><br>
+            <button onclick="location.href='courses.html'">Courses</button><br>
+            <button onclick="location.href='addmission.html'">Addmission</button><br>
+            <button onclick="location.href='login.html'">Login</button><br>
+            <button onclick="location.href='register.html'">Register</button><br>
+            <button onclick="location.href='about.html'">About Us</button><br>
+    </div>
+    <div id="carousel">
+            <span id="prev-btn" onclick="carousel(-1,'carousel_image')">❮</span> <span id="next-btn" onclick="carousel(1,'carousel_image')">❯</span>
         <img src="static/images/1.jpg" alt="" id="carousel_image">
     </div>
     <div id="links">
@@ -55,5 +66,6 @@
         <button onclick="location.href='admin/admin.html'">Admin</button>
     </div>
     <script src="static/js/carousel.js"></script>
+    <script src="static/js/index.js"></script>
 </body>
 </html>

@@ -1,1 +1,77 @@
-{\rtf1}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gpt Gulbarga</title>
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+    <div id="header">
+        <div class="flex">
+            <img src="static/images/kar_logo.png" alt="" id="logo">
+            <h1 id="name">Government Polytechnic Gulbarga</h1>
+        </div>
+    </div>
+    <!--❮❯--->
+    <div id="desk-nav">
+        <div class="flex">
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='courses.html'">Courses</button>
+            <button onclick="location.href='addmission.html'">Addmission</button>
+            <button onclick="location.href='login.html'">Login</button>
+            <button onclick="location.href='register.html'">Register</button>
+            <button onclick="location.href='about.html'">About Us</button>
+        </div>
+    </div>
+    <div id="menu" onclick="change(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        </div>
+    <div id="mob-nav" class="hide">
+            <button onclick="location.href='index.html'">Home</button><br>
+            <button onclick="location.href='courses.html'">Courses</button><br>
+            <button onclick="location.href='addmission.html'">Addmission</button><br>
+            <button onclick="location.href='login.html'">Login</button><br>
+            <button onclick="location.href='register.html'">Register</button><br>
+            <button onclick="location.href='about.html'">About Us</button><br>
+    </div>
+
+    
+    <div id="login-form">
+        <form action="">
+            <table>
+                <tr>
+                    <td>Student: <input type="radio" name="type" id="" value="Reg No" onchange="validate(this)"></td>
+                    <td>Faculty: <input type="radio" name="type" id="" value="Emp Id"onchange="validate(this)"></td>
+                </tr>
+                <tr>
+                    <td id="user_id">Reg No:</td>
+                    <td><input type="text" name="username" title="username"></td>
+                </tr>
+                <tr>
+                    <td>Full name:</td>
+                    <td><input type="text" name="username" title="username"></td>
+                </tr>
+                <tr>
+                    <td>Mobile:</td>
+                    <td><input type="text" name="username" title="username"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="username" title="username"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="text" name="password" title="password"></td>
+                </tr>
+            </table>
+            <button type="submit" name="login" id="submit-button">Signup</button>
+        </form>
+    </div>
+    <script src="static/js/index.js"></script>
+</body>
+</html>
