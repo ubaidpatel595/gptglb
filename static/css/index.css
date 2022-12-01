@@ -29,6 +29,7 @@ text-align: center;
 }
 body{
     overflow-y:scroll;
+    max-width: 100%;
 }
 #menu{
     margin-left: 20px;
@@ -87,6 +88,9 @@ body{
         display:none;
     }
     #menu{
+        display: block;
+    }
+    .flex{
         display: block;
     }
 }

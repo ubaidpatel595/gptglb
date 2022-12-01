@@ -36,4 +36,9 @@
 #prev-btn:hover,#next-btn:hover{
     background-color: rgba(202, 167, 167, 0.57);
 }
+@media screen and (max-width: 620px) {
+    #carousel{
+        width: 100%;
+    }
+}
 
