@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gpt Gulbarga</title>
-    <link rel="stylesheet" href="static/css/admin.css">
+    <link rel="stylesheet" href="static/css/hod.css">
 </head>
 <body>
     <div id="header">
@@ -16,39 +16,33 @@
     </div>
     <div id="nav">
         <div class="flex">
-            <button>Home</button>
-            <button>Courses</button>
-            <button>Addmission</button>
-            <button>Login</button>
-            <button>Register</button>
-            <button>About Us</button>
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='courses.html'">Courses</button>
+            <button onclick="location.href='addmission.html'">Addmission</button>
+            <button onclick="location.href='login.html'">Login</button>
+            <button onclick="location.href='register.html'">Register</button>
+            <button onclick="location.href='about.html'">About Us</button>
         </div>
     </div>
     <div id="actions">
         <div class="flex" style="margin:0px;">
             <div id="act-btns">
-                <button onclick="show('action',['view','delete'])">Assign Subject</button><br>
-                <button onclick="show('gen_reports',['delete','action'])">Generate Reports</button>  <br> 
-                <button onclick="show('delete',['view','action'])">Upload</button><br>
+                <button onclick="show('action',['gen_reports','upload','upload_opts'])">Assign Subject</button><br>
+                <button onclick="show('gen_reports',['upload','action','upload_opts'])">Generate Reports</button>  <br> 
+                <button onclick="show('upload',['gen_reports','upload_opts'])">Upload</button><br>
             </div>
             <iframe src="assignsubject.html" frameborder="0" id="action"></iframe>
             <div id="gen_reports">
                 <button>Shortage Of Attendance</button><br>
                 <button>Students Report</button><br>
-                <button>Me Students</button><br>
-                <button>Cie Makeup Studentlist</button><br>
-                <button>EE Students</button><br>
-                <button>Ec Students</button><br>
+                <button>CIE Makeup Studentlist</button><br>
+                <button>SEE Makeup Studentlist</button><br>
             </div>
-            <div id="delete">
-                <button>Delete </button><br>
-                <button>Is Students</button><br>
-                <button>Me Students</button><br>
-                <button>Civil Students</button><br>
-                <button>EE Students</button><br>
-                <button>Ec Students</button><br>
+            <div id="upload">
+                <button onclick="show_action('upload_opts','upload','Sem Results')">SEM Results </button><br>
+                <button onclick="show_action('upload_opts','upload','IA marks')">IA Marks</button><br>
             </div>
-           <iframe src="upload.html" frameborder="0" id="action"></iframe>
+           <iframe src="upload.html" frameborder="0" id="upload_opts" ></iframe>
         </div>
     </div>
     <script src="static/js/admin.js"></script>

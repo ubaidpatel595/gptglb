@@ -26,10 +26,6 @@ text-align: center;
     background-color: inherit;
     margin-right: 50px;
 }
-#carousel{
-    background-color: rgb(24, 130, 179);
-    width: 50%;
-    height: 50vh;
-    margin: auto;
-    margin-top: 20px;
+body{
+    overflow-y:scroll;
 }

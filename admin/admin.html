@@ -10,19 +10,20 @@
 <body>
     <div id="header">
         <div class="flex">
-            <img src="static/images/kar_logo.png" alt="" id="logo">
+            <img src="../static/images/kar_logo.png" alt="" id="logo">
             <h1 id="name">Government Polytechnic Gulbarga</h1>
         </div>
     </div>
     <div id="nav">
         <div class="flex">
-            <button>Home</button>
-            <button>Courses</button>
-            <button>Addmission</button>
-            <button>Login</button>
-            <button>Register</button>
-            <button>About Us</button>
+            <button onclick="location.href='../index.html'">Home</button>
+            <button onclick="location.href='../courses.html'">Courses</button>
+            <button onclick="location.href='../addmission.html'">Addmission</button>
+            <button onclick="location.href='../login.html'">Login</button>
+            <button onclick="location.href='../register.html'">Register</button>
+            <button onclick="location.href='../about.html'">About Us</button>
         </div>
+    </div>
     </div>
     <div id="actions">
         <div class="flex" style="margin:0px;">
@@ -32,8 +33,8 @@
                 <button onclick="show('delete',['view','upload','action'])">Delete</button><br>
             </div>
             <div id="upload">
-                <button onclick="show_action('upload','Student')">Student</button><br>
-                <button onclick="show_action('upload','Faculty')">Faculty</button>
+                <button onclick="show_action('action','upload','Student')">Student</button><br>
+                <button onclick="show_action('action','upload','Faculty')">Faculty</button>
             </div>
             <div id="view">
                 <button>Cs Students</button><br>

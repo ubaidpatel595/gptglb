@@ -6,8 +6,8 @@ function show(elem,hide){
         opt.style="display:none";
     }
 }
-function show_action(act,type){
-    let elem = document.getElementById("action");
+function show_action(id,act,type){
+    let elem = document.getElementById(id);
     elem.style='display:block';
     elem.src=act+'.html';
     sessionStorage.setItem("upload_type",type)
